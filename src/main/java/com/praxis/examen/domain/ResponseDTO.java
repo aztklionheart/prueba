@@ -1,10 +1,18 @@
 package com.praxis.examen.domain;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel
 public class ResponseDTO {
 	
+	@ApiModelProperty(position = 1, required = true, value = "Nombre")
 	private String nombre;
+	@ApiModelProperty(position = 2, required = true, value = "Primer Apellido")
 	private String primerApellido;
+	@ApiModelProperty(position = 3, required = true, value = "Segundo Apellido")
 	private String segundoApellido;
+	@ApiModelProperty(position = 4, required = true, value = "Edad")
 	private int edad;
 	
 	

@@ -9,7 +9,7 @@ public class ExamenHelper {
 	public static ResponseDTO toDTO(ResponseEntity responseEntity) {
 		
 		ResponseDTO responseDTO = new ResponseDTO();
-		responseDTO.setEdad(|responseEntity.getEdad());
+		responseDTO.setEdad(responseEntity.getEdad());
 		responseDTO.setNombre(responseEntity.getNombre());
 		responseDTO.setPrimerApellido(responseEntity.getPrimerApellido());
 		responseDTO.setSegundoApellido(responseEntity.getSegundoApellido());
